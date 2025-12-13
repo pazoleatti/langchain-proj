@@ -19,7 +19,7 @@ def search(query: str) -> str:
     print(f"Поиск по {query}")
     return "Погода в Токио солнечная"
 
-llm = ChatOpenAI()
+llm = ChatOpenAI(model="gpt-5")
 tools = [search]
 agent = create_agent(model=llm, tools=tools)
 
