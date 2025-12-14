@@ -7,6 +7,8 @@ from langchain_tavily import TavilySearch
 
 load_dotenv()
 
+tools = [TavilySearch()]
+
 def main():
     print("Hello from langchain-course!")
 
